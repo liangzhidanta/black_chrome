@@ -1,0 +1,165 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #e8e8e8;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+#backButton {
+  color: #3391ff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#backButton:hover {
+  text-decoration: underline;
+}
+
+.description {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+.exceptions-list {
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.exception-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #333;
+}
+
+.exception-item:last-child {
+  border-bottom: none;
+}
+
+.site-icon {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.site-icon svg {
+  fill: #999;
+}
+
+.site-text {
+  flex-grow: 1;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff5f56;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.empty-message {
+  padding: 20px;
+  text-align: center;
+  color: #999;
+}
+
+.add-exception {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#addExceptionBtn {
+  background-color: #2a2a2a;
+  color: #e8e8e8;
+  border: 1px solid #444;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#addExceptionBtn:hover {
+  background-color: #333;
+}
+
+.preview {
+  margin-top: 30px;
+}
+
+.browser-mockup {
+  border: 1px solid #444;
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.browser-header {
+  background-color: #333;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.browser-buttons {
+  display: flex;
+  margin-right: 10px;
+}
+
+.browser-button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.red {
+  background-color: #ff5f56;
+}
+
+.yellow {
+  background-color: #ffbd2e;
+}
+
+.green {
+  background-color: #27c93f;
+}
+
+.browser-address {
+  background-color: #222;
+  color: #999;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 10px;
+  flex-grow: 1;
+}
+
+.browser-content {
+  background-color: #fff;
+  color: #000;
+  padding: 30px;
+  text-align: center;
+}

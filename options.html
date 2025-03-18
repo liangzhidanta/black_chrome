@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网站例外列表 - Black Safari</title>
+  <link rel="stylesheet" href="css/options.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="#" id="backButton">返回</a>
+      <h1>网站例外列表</h1>
+    </div>
+    
+    <div class="content">
+      <p class="description">在以下网站上不应用夜间模式：</p>
+      
+      <div class="exceptions-list" id="exceptionsList">
+        <!-- 例外网站列表将在这里动态生成 -->
+      </div>
+      
+      <div class="add-exception">
+        <button id="addExceptionBtn">+ 添加网站</button>
+      </div>
+      
+      <div class="preview">
+        <div class="browser-mockup">
+          <div class="browser-header">
+            <div class="browser-buttons">
+              <span class="browser-button red"></span>
+              <span class="browser-button yellow"></span>
+              <span class="browser-button green"></span>
+            </div>
+            <div class="browser-address" id="previewUrl">youtube.com</div>
+          </div>
+          <div class="browser-content">
+            正常显示网页内容
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Safari</title>
+  <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Black Safari</h1>
+      <label class="switch">
+        <input type="checkbox" id="darkModeToggle">
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <div class="section">
+      <h2>基本设置</h2>
+      
+      <div class="setting-item">
+        <span>亮度调节</span>
+        <div class="slider-container">
+          <input type="range" min="10" max="100" value="100" class="brightness-slider" id="brightnessSlider">
+          <span id="brightnessValue">100%</span>
+        </div>
+      </div>
+      
+      <div class="setting-item with-arrow" id="websiteExceptions">
+        <span>网站例外列表</span>
+        <span class="arrow">›</span>
+      </div>
+    </div>
+
+    <div class="preview">
+      <div class="browser-mockup">
+        <div class="browser-header">
+          <div class="browser-buttons">
+            <span class="browser-button red"></span>
+            <span class="browser-button yellow"></span>
+            <span class="browser-button green"></span>
+          </div>
+          <div class="browser-address">example.com</div>
+        </div>
+        <div class="browser-content" id="previewContent">
+          网页内容预览
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="about.html" target="_blank" id="aboutLink">关于</a>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
