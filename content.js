@@ -43,7 +43,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 // 应用暗黑模式
 function applyDarkMode() {
   styleElement.textContent = `
-    html, body {
+    html, body, div, section, article, header, footer, nav, aside, main {
       background-color: #1a1a1a !important;
       color: #e8e8e8 !important;
     }
@@ -65,6 +65,21 @@ function applyDarkMode() {
     /* 反转某些元素的颜色 */
     .inverted, svg, [class*="logo"] {
       filter: invert(0.85) !important;
+    }
+    
+    /* 确保所有文本元素都有浅色文字 */
+    p, span, h1, h2, h3, h4, h5, h6, li, td, th, caption, label, strong, em, small, blockquote, code, pre {
+      color: #e8e8e8 !important;
+    }
+    
+    /* 确保所有容器元素都有深色背景 */
+    table, tr, td, th, ul, ol, menu, form, fieldset, legend, details, summary {
+      background-color: #1a1a1a !important;
+    }
+    
+    /* 确保边框颜色适合深色模式 */
+    *, *::before, *::after {
+      border-color: #444 !important;
     }
   `;
 }

@@ -1,19 +1,19 @@
 {
   "manifest_version": 3,
-  "name": "Black Safari",
+  "name": "Black Chrome",
   "version": "1.0.0",
-  "description": "简约高效的夜间浏览体验",
+  "description": "简洁高效的夜间浏览体验",
   "icons": {
-    "16": "images/icon16.png",
-    "48": "images/icon48.png",
-    "128": "images/icon128.png"
+    "16": "images/sun.svg",
+    "48": "images/sun.svg",
+    "128": "images/sun.svg"
   },
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "images/icon16.png",
-      "48": "images/icon48.png",
-      "128": "images/icon128.png"
+      "16": "images/sun.svg",
+      "48": "images/sun.svg",
+      "128": "images/sun.svg"
     }
   },
   "permissions": [

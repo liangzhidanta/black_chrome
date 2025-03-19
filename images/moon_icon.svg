@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <!-- 增大月亮本体 -->
+  <path d="M92 64C92 79.464 79.464 92 64 92C48.536 92 36 79.464 36 64C36 48.536 48.536 36 64 36C64 50 72 58 86 58C86 58 92 58 92 64Z" fill="url(#moonGradient)" stroke="#4A2C91" stroke-width="6" stroke-linejoin="round" transform="scale(1.4) translate(-16, -16)"/>
+  
+  <!-- 星星和装饰元素 -->
+  <path d="M46 40L48 36L50 40L54 42L50 44L48 48L46 44L42 42L46 40Z" fill="#FF9500" transform="scale(1.1) translate(-8, -8)"/>
+  <path d="M86 36L88 32L90 36L94 38L90 40L88 44L86 40L82 38L86 36Z" fill="#FF9500" transform="scale(1.1) translate(-8, -8)"/>
+  <path d="M102 64L104 60L106 64L110 66L106 68L104 72L102 68L98 66L102 64Z" fill="#FF9500" transform="scale(1.1) translate(-8, -8)"/>
+  <path d="M76 88L78 84L80 88L84 90L80 92L78 96L76 92L72 90L76 88Z" fill="#FF9500" transform="scale(1.1) translate(-8, -8)"/>
+  
+  <!-- 小点装饰 -->
+  <circle cx="110" cy="48" r="2" fill="#FF9500" transform="scale(1.1) translate(-8, -8)"/>
+  <circle cx="96" cy="80" r="2" fill="#FF9500" transform="scale(1.1) translate(-8, -8)"/>
+  <circle cx="64" cy="24" r="2" fill="#FF9500" transform="scale(1.1) translate(-8, -8)"/>
+  <circle cx="32" cy="76" r="2" fill="#FF9500" transform="scale(1.1) translate(-8, -8)"/>
+  
+  <!-- 十字装饰 -->
+  <path d="M48 24L48 16M44 20L52 20" stroke="#FF9500" stroke-width="2" stroke-linecap="round" transform="scale(1.1) translate(-8, -8)"/>
+  <path d="M108 88L108 80M104 84L112 84" stroke="#FF9500" stroke-width="2" stroke-linecap="round" transform="scale(1.1) translate(-8, -8)"/>
+  
+  <!-- 渐变定义 -->
+  <defs>
+    <linearGradient id="moonGradient" x1="36" y1="64" x2="92" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFDA79"/>
+      <stop offset="1" stop-color="#FFAA33"/>
+    </linearGradient>
+  </defs>
+</svg>

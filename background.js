@@ -20,6 +20,19 @@ chrome.runtime.onInstalled.addListener(function() {
     if (Object.keys(defaultSettings).length > 0) {
       chrome.storage.sync.set(defaultSettings);
     }
+    
+    // 设置初始图标
+    const isDarkMode = data.darkMode !== undefined ? data.darkMode : defaultSettings.darkMode;
+    const iconPath = isDarkMode ? {
+      16: 'images/moon.svg',
+      48: 'images/moon.svg',
+      128: 'images/moon.svg'
+    } : {
+      16: 'images/sun.svg',
+      48: 'images/sun.svg',
+      128: 'images/sun.svg'
+    };
+    chrome.action.setIcon({ path: iconPath });
   });
 });
 

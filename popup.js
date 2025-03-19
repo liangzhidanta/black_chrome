@@ -5,12 +5,31 @@ document.addEventListener('DOMContentLoaded', function() {
   const previewContent = document.getElementById('previewContent');
   const websiteExceptions = document.getElementById('websiteExceptions');
   const aboutLink = document.getElementById('aboutLink');
+  
+  // 更新扩展图标函数
+  function updateExtensionIcon(isDarkMode) {
+    const iconPath = isDarkMode ? {
+      16: 'images/moon.svg',
+      48: 'images/moon.svg',
+      128: 'images/moon.svg'
+    } : {
+      16: 'images/sun.svg',
+      48: 'images/sun.svg',
+      128: 'images/sun.svg'
+    };
+    chrome.action.setIcon({ path: iconPath });
+    console.log('图标已更新为:', isDarkMode ? '月亮' : '太阳');
+  }
 
   // 加载保存的设置
   chrome.storage.sync.get(['darkMode', 'brightness', 'exceptions'], function(data) {
     // 设置暗黑模式开关状态
-    darkModeToggle.checked = data.darkMode !== undefined ? data.darkMode : false;
+    const isDarkMode = data.darkMode !== undefined ? data.darkMode : false;
+    darkModeToggle.checked = isDarkMode;
     updatePreview();
+    
+    // 更新扩展图标
+    updateExtensionIcon(isDarkMode);
     
     // 设置亮度滑块
     if (data.brightness !== undefined) {
@@ -28,6 +47,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 更新预览
     updatePreview();
+    
+    // 更新扩展图标
+    updateExtensionIcon(isDarkMode);
     
     // 向当前标签页发送消息
     chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
