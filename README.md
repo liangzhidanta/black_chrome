@@ -70,12 +70,6 @@ Black Chrome 是一款简洁而强大的 Chrome 浏览器扩展，为您提供�
 
 本项目采用 [MIT 许可证](LICENSE)。
 
-## 📞 联系方式
-
-如有任何问题或建议，请通过以下方式联系我们：
-
-- GitHub Issues: [提交问题](https://github.com/yourusername/black-chrome/issues)
-- 电子邮件: your.email@example.com
 
 ---
 
