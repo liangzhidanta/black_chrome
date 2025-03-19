@@ -4,16 +4,16 @@
   "version": "1.0.0",
   "description": "简洁高效的夜间浏览体验",
   "icons": {
-    "16": "images/sun.svg",
-    "48": "images/sun.svg",
-    "128": "images/sun.svg"
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
   },
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "images/sun.svg",
-      "48": "images/sun.svg",
-      "128": "images/sun.svg"
+      "16": "images/moon.svg",
+      "48": "images/moon.svg",
+      "128": "images/moon.svg"
     }
   },
   "permissions": [
